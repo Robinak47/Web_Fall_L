@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> User Input</title>
+    </head>
+
+    <body>
+        <form action="" method="POST" enctype="multipart/form-data">
+            <fieldset>
+                <legend> User Basic Information</legend>
+                <label for="userName">UserName:</label>
+                <input type="text" id="userName" name="userName" placeholder="input userName" required><br>
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" required><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br>
+                <label for="gender">Gender</label>
+                <input type="radio" id="male" name="gender" value="male" >male
+                <input type="radio" id="female" name="gender" value="female">female<br>
+                <label for="fabSports[]">Fab Sports:</label>
+                <input type="checkbox" id="cricket" name="fabSports[]" value="cricket">cricket
+                <input type="checkbox" id="football" name="fabSports[]" value="football">football
+                <input type="checkbox" id="tennis" name="fabSports[]" value="tennis">tennis<br>
+                <label for="country">Country:</label>
+                <select name="country" id="country">
+                    <option id="noOption" value="">Select an option</option>
+                    <option id="usa" value="usa">USA</option>
+                    <option id="bd" value="bd">BD</option>
+                    <option id="uk" value="uk">UK</option>
+                </select><br>
+                <label for="pass">Password:</label>
+                <input type="password" id="pass" name="pass" required><br>
+                <input type="submit" id="submit" name="submit" value="submit">
+                <input type="reset" id="reset" name="reset" value="reset">
+
+            </fieldset>
+        </form>
+
+        <form id="paymentInfo" action="" method="POST">
+            <fieldset>
+                <legend>
+                    Payment Infos
+                </legend>
+
+                <label for="paymentType">Payment Type</label>
+                <input type="radio" id="mobileBanking" name="paymentType" value="mobileBanking">mobileBanking
+                <input type="radio" id="onlineBanking" name="paymentType" value="onlineBanking">onlineBanking
+                <input type="radio" id="netBanking" name="paymentType" value="netBanking">netBanking<br>
+                <label for="paymentDate">Payment Date:</label>
+                <input type="date" id="date" name="date">
+            </fieldset>
+
+        </form>
+    </body>
+</html>
