@@ -1,0 +1,15 @@
+
+#div1
+{
+    position: relative;
+    border: 2px solid black;
+    outline: 100px solid green;
+
+}
+
+#div2
+{
+    position:absolute;
+    top:100px;
+  
+}
