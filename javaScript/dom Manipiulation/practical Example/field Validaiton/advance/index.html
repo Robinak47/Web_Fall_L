@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="script.js" defer></script>
+    </head>
+
+    <body>
+        <form onsubmit="return validateForm()">
+        
+            <input type="text" id="nameTF">
+            <span style="color:red" id="nameERR"></span><br><br>
+
+            <input type="number" id="ageTF">
+            <span style="color:red" id="ageERR"></span><br><br>
+
+             <input type="text" id="emailTF">
+            <span style="color:red" id="emailERR"></span><br><br>
+
+            <input type="radio" id="maleRB" value="male" name="gender">male
+            <input type="radio" id="femaleRB" value="female" name="gender">female
+            <span style="color:red" id="genderERR"></span><br><br>
+
+            <input type="checkbox" id="cricketCMB" value="cricket" name="sports">cricket
+            <input type="checkbox" id="footballCMB" value="football" name="sports">football
+            <span style="color:red" id="sportsERR"></span><br><br>
+
+            <select id="country">
+                <option value=""> select an option</option>
+                <option value="USA">USA</option>
+                <option value="BNG"> BNG</option>
+
+            </select>
+            <span style="color:red" id="countryERR"></span><br><br>
+
+            <input type="file" id="fileUpload">
+            <span style="color:red" id="fileERR"></span><br><br>
+
+            <input type="submit" value="submit" id="submit">
+
+
+        </form>
+    </body>
+</html>
