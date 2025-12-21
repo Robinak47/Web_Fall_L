@@ -4,9 +4,9 @@
     function sayMyName()
     {
         static $x=5;
-        global $num;
+        
         echo "Meow<br>";
-        echo $num."<br>";
+        echo $GLOBALS['num']."<br>";
         echo $x."<br>";
         $x++;
     }
