@@ -1,28 +1,31 @@
 <?php
 
+error_reporting(E_ALL);
+ini_set('display_errors', 1);
+
     $host="localhost";
     $user="root";
-    $pass="";
-    $db_name="myDB";
+    $password="";
+    $db_name="sample_proj_L";
     $port=3306;
 
     function dbConnect()
     {
         global $host;
         global $user;
-        global $pass;
+        global $password;
         global $db_name;
         global $port;
-        $conn=mysqli_connect($host, $user, $pass, $db_name, $port);
+        $conn=mysqli_connect($host, $user, $password, $db_name, $port);
 
         if(!$conn)
         {
-            echo mysqli_error($conn);
+            //echo mysqli_connect_error();
         }
 
         else
         {
-            echo "connection established";
+            //echo "connection established";
             return $conn;
         }
 
