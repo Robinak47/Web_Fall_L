@@ -1,12 +1,10 @@
 <?php
-
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
-
+    error_reporting(E_ALL);
+    ini_set('display_errors', 1);
     $host="localhost";
     $user="root";
     $password="";
-    $db_name="sample_proj_L";
+    $dbName="sample_proj_C";
     $port=3306;
 
     function dbConnect()
@@ -14,22 +12,26 @@ ini_set('display_errors', 1);
         global $host;
         global $user;
         global $password;
-        global $db_name;
+        global $dbName;
         global $port;
-        $conn=mysqli_connect($host, $user, $password, $db_name, $port);
+        $conn=mysqli_connect($host, $user, $password, $dbName, $port);
 
         if(!$conn)
         {
-            //echo mysqli_connect_error();
+            echo mysqli_connect_error();
+            //echo "not connected";
         }
 
         else
         {
-            //echo "connection established";
+            //echo "connection succefully establishe<br>";
+            
             return $conn;
         }
-
-
     }
 
-    ?>
+    
+
+    
+
+?>
